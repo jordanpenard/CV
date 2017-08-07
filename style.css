@@ -1,0 +1,51 @@
+body {
+	font-family: "Helvetica Neue",Tahoma,Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+.section-name, .item-title {
+	font-weight: bold;
+}
+
+.section-name {
+	font-size: 14px;
+	color: #6b6b89;
+	text-transform: uppercase;
+}
+
+.item-title {
+	color: rgb(145, 6, 145);
+}
+
+.item-content {
+	color: #2e2e3a;
+}
+
+#header-name {
+	font-size: 97px;
+	color: #1e1e27;
+	font-weight: bold;
+	letter-spacing: -6px;
+	text-transform: uppercase;
+	line-height: 72px;
+}
+
+#header-details {
+	font-size: 17px;
+	color: #777879;
+	font-weight: 200;
+}
+
+#header-details a {
+	color: #777879 !important;
+}
+
+.contact-details a, .item-content a {
+	color: #00adf1 !important;
+}
+
+ul {
+	margin: 0px;
+}
+

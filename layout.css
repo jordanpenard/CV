@@ -1,0 +1,113 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #eef0f2;
+	background: rgba(238,240,242,1);
+}
+
+.theme-row {
+	width: 920px;
+	margin: 0 auto;
+	padding: 0px 20px 33px 20px;
+	
+	background: #ffffff;
+	background: rgba(255,255,255,1.00);
+
+	box-shadow: 0px 0px 32px 0px rgba(199,200,202,0.35);
+	-moz-box-shadow: 0px 0px 32px 0px rgba(199,200,202,0.35);
+	-webkit-box-shadow: 0px 0px 32px 0px rgba(199,200,202,0.35);
+}
+
+/* This is used to take into account the high of the inside divs (remove the effect of the float about the hight) */
+.theme-row:after, .section-items:after, #header:after, #contact:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	font-size:1px;
+	visibility: hidden;
+}
+
+.section-name {
+	margin: 25px 0px 6px 0px;
+}
+
+.section-name, .section-content {
+	float: left;
+	width: 100%;
+}
+
+.section-items {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.item-title, .item-content {
+	float: left;
+}
+
+.item-title div, .item-content div {
+	padding: 0 10px;
+}
+
+.item-title {
+	width: 35%;
+	text-align: right;
+}
+
+.item-content {
+	width: 65%;
+	text-align: justify;
+}
+
+#header {
+	height: 300px;
+}
+
+#header, #footer, #contact {
+	padding: 20px;
+}
+
+#header-content, #qrcode {
+	float: left;
+}
+
+#header-content {
+	width: 580px;
+	height: 260px;
+	margin: 20px;
+	
+	text-align: right;
+	position: relative;
+}
+
+#header-details {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+.contact-details {
+	float: left;
+}
+
+.contact-details div {
+	margin: 0px 10px;
+}
+
+#contact .section-name {
+	width: 25%;
+	margin-top: 0px;
+}
+
+#contact-tel {
+	width: 20%;
+}
+
+#contact-email {
+	width: 20%;
+}
+
+#contact-mail {
+	width: 35%;
+}

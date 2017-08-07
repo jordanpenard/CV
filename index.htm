@@ -1,0 +1,245 @@
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Jordan Penard - CV</title>
+		<link rel="stylesheet" type="text/css" href="./layout.css">
+		<link rel="stylesheet" type="text/css" href="./style.css">
+	</head>
+
+	<body>
+		<div class="theme-row" id="header">
+			<div id="qrcode">
+				<img src="./qrcode.png">
+			</div>
+			<div id="header-content">
+				<div id="header-name">
+					Jordan<br>PENARD				</div>
+				
+				<div id="header-details">
+					45 Copsewood Road, Watford, WD24 5DY, UK<br>
+					+447 514 737899 &nbsp; &nbsp; <a href="mailto:jordan@penard.fr">jordan@penard.fr</a> &nbsp; &nbsp; <a href="http://jordan.penard.fr/">http://jordan.penard.fr</a>				</div>
+			</div>
+		</div>
+        
+		<div class="theme-row" id="footer">
+			<strong>Keywords:</strong> Design For Test (DFT), Digital Design, Verilog, VHDL, Build In Self Test (BIST), ATPG, Tessent, TetraMAX, JTAG, Test Access Port (TAP), ECO, OCC, SoC, Verification, Scripting		</div>
+
+				<div class="theme-row">
+			<div class="section-name">EMPLOYMENT</div>
+			<div class="section-content">
+				                <div class="section-items">
+					<div class="item-title"><div>
+						Aug. 2015 - Now <br>
+DFT Hardware Design Engineer<br>
+Imagination Technologies (England)<br>
+<img src="./imgtec.gif" style="width: 100px;margin-top: 5px;">					</div></div>
+					<div class="item-content"><div>
+						I joined a Design For Test team in the SoC design division. <br>
+<br>
+DFT work on a first SoC (1000k DFF, tapped out end of 2016) :
+<ul>
+<li>In charge of ATPG. Working with physical design to provide <b>ECO scripts</b> to fix scan issues. Synopsys <b>TetraMAX</b> used for ATPG.</li>
+<li><b>Scan simulation</b> (Stuck-At, Transition Fault with Synopsys <b>OCC</b>, in 0 delay and with SDF) : In order to improve efficiency, I developed a <b>script based environment</b> to run scan simulations. This environment is based on a combination of modular configuration files in order to centralise the configuration across the different type of scan simulations.</li>
+<li>AMS tests : Responsible for the <b>BIST testing</b> of Synopsys HDMI Rx PHY and Synopsys DDR4 PHY. Tests written in <b>SVF</b> format. This was a good opportunity for me to learn about <b>JTAG</b> / TAP based testing.</li>
+<li>Working with <b>STA</b> to identify case analysis, give feedback about what can be false pathed, and debug failing at-speed simulations.</li>
+<li>ATE <b>bring-up</b> coordination and support</li>
+</ul>
+<br>
+DFT work on 2 new SoC (both kickoff end of 2016) :
+<ul>
+<li>Writing and reviewing <b>DFT specifications</b> for subsystems involving third party IPs (DDR4, HDMI, MIPI, PCIe, SATA, SerDes).</li>
+<li>In charge of the top level DFT strategy for one of the 2 SoC.</li>
+</ul>
+<br>
+Methodology work :
+<ul>
+<li>Development of a <b>hierarchical</b> MBIST insertion flow (Mentor Tessent Shell), at RTL level on VHDL and Verilog design, in a <b>bottom up</b> fashion.</li>
+<li>Development of a <b>boundary scan</b> verification flow for subsystems.</li>
+<li>Evaluation of Mentor <b>IJTAG</b> (<b>IEEE 1687</b>) solution for AMS testing.</li>
+<li>Responsible of a memory partitioning/generation tool. This is used across the division to generate RAMs and ROMs for our SoCs.</li>
+<li>Creation of a few test cases in order to experiment new tools or flows. Small VHDL and Verilog designs containing memories, with the associated scripts for MBIST insertion, MBIST simulation, <b>synthesis</b>, scan insertion, <b>formal equivalence</b>, and ATPG.</li>
+<li>Study and development of a hardware solution to provide <b>scan testing through the TAP</b> with limited equipments (in our lab or at our desk for example). Wide variety of technical challenges involved in this project : Software (development of a <b>STIL parser</b>, USB communication), Hardware (<b>FPGA</b> development).</li>
+</ul>					</div></div>
+				</div>
+				                <div class="section-items">
+					<div class="item-title"><div>
+						Sept. 2013 - Aug. 2015 (2 years)<br>
+DFT Hardware Design Engineer<br>
+STMicroelectronics Edinburgh (Scotland)<br>
+<img src="./st.png" style="width: 100px;margin-top: 5px;">					</div></div>
+					<div class="item-content"><div>
+						I joined a Design For Test implementation and methodology team. The aim of the team was to Spec the test requirements for our circuits, implement previously defined solutions, verify it after been integrated, and deliver patterns to test engineers.
+<ul>
+<li>I was in charge of the setup, maintaining and run ATPG tool (Mentor Tessent) for some of our projects</li>
+<li>Running Scan simulations on the previously generated patterns by ATPG tool (zero delay and back-annotated with SDF)</li>
+<li>I was also asked to develop SystemVerilog (UVM) testbench for DFT functional tests (BIST, IO muxing, ...), or to verify some parts of the design (I worked on the verification of a CAB RCC BIST)</li>
+</ul>
+<br>
+Often working on multiple projects in parallel with very tight schedules, I know how to organize myself to not miss anything. I had also to interact with other team from different domains (Design, Synthesis/P&amp;R, Timing analysis, Test Engineer, ...) and from other geographic sites with different time zone.<br><br>
+Our mission was also to develop and improve our methodology/flows. I contributed to this activity by developing a SystemVerilog package used for the Verification of the Design. This module provide an easy and standardized way to communicate to the DUT (Device Under Test) through serial buses. 
+<ul>
+<li>Thanks to this module, a test can be easily used on an other project with a different serial bus (for instance SPI instead of I2C)</li>
+<li>The module was also monitoring all the interactions at the boundary of the DUT and dump automatically a pattern set in an human readable language that can be run on our FPGA platforms, on tester, and also can be re-simulated</li>
+<li>Thanks to that, test writing become more standardized from project to project and the pattern delivery is more reliable and quick</li>
+</ul>
+I worked on this project with someone else from our CAD team, and we used some agile technics during this development (tasks splitting and assignment, revision control software used, regular stand-up meeting to discuss or review tasks assignment...)					</div></div>
+				</div>
+				                <div class="section-items">
+					<div class="item-title"><div>
+						Sept. 2010 - Aug. 2013 (3 years)<br>
+Engineer degree in apprenticeship<br>
+STMicroelectronics Crolles (France)<br>
+<img src="./st.png" style="width: 100px;margin-top: 5px;">					</div></div>
+					<div class="item-content"><div>
+						I join a characterization team in the R&amp;D department, and my mission was to develop tools to improve the everyday work of the team.<br><br>
+My first main project was a tool to automatically setup semi-conductor test equipment. The data was loaded from a follow-up software. This tool speed up the time required to setup the tester (now done in 15mins instead of 1h) and made this process more reliable. I had to work closely with other team to understand the requirements, and also with an external company who developed the follow up software to understand how I can get the information that I need.<br><br>
+My second main project was a monitoring of our tests equipment.
+<ul>
+<li>The aim was in the first place to see in live and in one go what is the status of any tester (used, not used, frozen)</li>
+<li>The second requirement was to draw usage graph over weeks or month of our set of testers</li>
+<li>The last requirement was to trigger an alarm on the phone of some people if something is going wrong on a tester</li>
+</ul>
+This last point avoid loosing days because a tester crashed and no one noticed because it's a very long and slow test. I worked on this project with an other apprentice. The communication was key in this project to be sure to meet the requirement and to be sure to be on the same track with my co-worker. To achieve that, everyday or every 2 days we were reviewing what was done during the previous days and what we planned to do on the following days.					</div></div>
+				</div>
+				                <div class="section-items">
+					<div class="item-title"><div>
+						Sept. 2009 - Aug. 2010 (1 year)<br>
+Second year of technical degree
+in apprenticeship<br>
+STMicroelectronics Crolles (France)<br>
+<img src="./st.png" style="width: 100px;margin-top: 5px;">					</div></div>
+					<div class="item-content"><div>
+						I was part of a High Frequency Characterization team for 1 year of apprenticeship.<br><br>
+The main activity was to do HF measurement and write report analyses of the results. S parameter were measured on transistor or self with different geometry. The aim was to characterise new technology node libraries.<br><br>
+During this activity I suggested to my team to develop a software to automate the raw data import to Excel and generating useful graphs. They agreed, so this became a side activity. I came up after some month to something who generated the skeleton of the report with inside the main parts of the required graph. By using the tool, writing a report now take 1 day instead of 2 without it.					</div></div>
+				</div>
+							</div>
+			
+		</div>
+        		<div class="theme-row">
+			<div class="section-name">TRAINING</div>
+			<div class="section-content">
+				                <div class="section-items">
+					<div class="item-title"><div>
+						2014					</div></div>
+					<div class="item-content"><div>
+						<b>SystemVerilog for Design and Verification</b> training from Cadence (3 days course)					</div></div>
+				</div>
+							</div>
+			
+		</div>
+        		<div class="theme-row">
+			<div class="section-name">EDUCATION</div>
+			<div class="section-content">
+				                <div class="section-items">
+					<div class="item-title"><div>
+						2010 - 2013					</div></div>
+					<div class="item-content"><div>
+						<b>Engineer degree (master's degree equivalent)</b> in Electronics and Computer Science at Grenoble INP ESISAR (France) in apprenticeship					</div></div>
+				</div>
+				                <div class="section-items">
+					<div class="item-title"><div>
+						2008 - 2010					</div></div>
+					<div class="item-content"><div>
+						<b>2-years technical degree (HND/HNC equivalent)</b> in Electronics at Josephe Fourier Grenoble IUT1 (France) with 1 year in apprenticeship					</div></div>
+				</div>
+				                <div class="section-items">
+					<div class="item-title"><div>
+						2005 - 2008					</div></div>
+					<div class="item-content"><div>
+						<b>French high-school</b> in Electronics at Joseph Fourier Valence (France)					</div></div>
+				</div>
+							</div>
+			
+		</div>
+        		<div class="theme-row">
+			<div class="section-name">SKILLS</div>
+			<div class="section-content">
+				                <div class="section-items">
+					<div class="item-title"><div>
+						Digital design					</div></div>
+					<div class="item-content"><div>
+						Verilog/SystemVerilog(+++), VHDL(+++)					</div></div>
+				</div>
+				                <div class="section-items">
+					<div class="item-title"><div>
+						Software developpment					</div></div>
+					<div class="item-content"><div>
+						C(++++), TCL(++++), SCALA(+++), PHP(+++), MySQL(+++), JAVA(++)					</div></div>
+				</div>
+				                <div class="section-items">
+					<div class="item-title"><div>
+						Operating System used daily					</div></div>
+					<div class="item-content"><div>
+						Linux, Mac, Windows					</div></div>
+				</div>
+				                <div class="section-items">
+					<div class="item-title"><div>
+						Tools					</div></div>
+					<div class="item-content"><div>
+						Synopsys :
+  <ul>
+    <li>TetraMAX (++++)</li>
+    <li>VCS (++)</li>
+    <li>DC (+)</li>
+    <li>Formality (+)</li>
+    </ul>
+Cadence NCSim (++++), <br>
+Mentor Tessent Shell (++++), <br>
+GIT(++++), Perforce(+++)					</div></div>
+				</div>
+				                <div class="section-items">
+					<div class="item-title"><div>
+						&nbsp;					</div></div>
+					<div class="item-content"><div>
+						<i>Beginner(+) → Expert(+++++)</i>					</div></div>
+				</div>
+							</div>
+			
+		</div>
+        		<div class="theme-row">
+			<div class="section-name">MISCELLANEOUS</div>
+			<div class="section-content">
+				                <div class="section-items">
+					<div class="item-title"><div>
+						Languages					</div></div>
+					<div class="item-content"><div>
+						<ul style="padding-left: 15px;">
+<li>French: Mother tongue</li>
+<li>English: Fluent</li>
+</ul>					</div></div>
+				</div>
+				                <div class="section-items">
+					<div class="item-title"><div>
+						Hobby					</div></div>
+					<div class="item-content"><div>
+						<ul style="padding-left: 15px;">
+  <li>Photography (<a href="https://flic.kr/ps/32dnWG" target="_blank">https://flic.kr/ps/32dnWG</a>)</li>
+  <li>Website development (<a href="http://alyanse-partenaires.fr/" target="_blank">http://alyanse-partenaires.fr</a>, <a href="http://le-val-des-sens.fr/" target="_blank">http://le-val-des-sens.fr</a>)</li>
+  <li>Skiing</li>
+  <li>Electronics</li>
+  <ul>
+    <li>Timelapse project (<a href="https://bitbucket.org/xantra/pantilthead" target="_blank">hardware</a>, <a href="https://bitbucket.org/xantra/timelapseremote" target="_blank">software</a>)</li>
+    <li>Creator kit (<a href="https://github.com/jordanpenard/clicker_firmware" target="_blank">clicker</a>, ci40)</li>
+  </ul>
+  <li>DIY</li>
+</ul>					</div></div>
+				</div>
+							</div>
+			
+		</div>
+        
+		<div class="theme-row" id="contact">
+			<div class="section-name">Contact</div>
+			<div id="contact-tel" class="contact-details"><div>
+				<strong>MOBILE</strong><br>
+				+447 514 737899			</div></div>
+			<div id="contact-email" class="contact-details"><div>
+				<strong>EMAIL</strong><br>
+				<a href="mailto:jordan@penard.fr">jordan@penard.fr</a>			</div></div>
+			<div id="contact-mail" class="contact-details"><div>
+				<strong>MAIL</strong><br>
+				45 Copsewood Road, Watford, WD24 5DY, UK			</div></div>
+		</div>
+		
+	
+</body></html>
