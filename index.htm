@@ -15,20 +15,52 @@
 					Jordan<br>PENARD				</div>
 				
 				<div id="header-details">
-					45 Copsewood Road, Watford, WD24 5DY, UK<br>
+					Flat 5, 26 Langley Road, WD17 4PT, Watford, UK<br>
 					+447 514 737899 &nbsp; &nbsp; <a href="mailto:jordan@penard.fr">jordan@penard.fr</a> &nbsp; &nbsp; <a href="http://jordan.penard.fr/">http://jordan.penard.fr</a>				</div>
 			</div>
 		</div>
         
-		<div class="theme-row" id="footer">
-			<strong>Keywords:</strong> Design For Test (DFT), Digital Design, Verilog, VHDL, Build In Self Test (BIST), ATPG, Tessent, TetraMAX, JTAG, Test Access Port (TAP), ECO, OCC, SoC, Verification, Scripting		</div>
+		<div class="theme-row" id="footer" style="font-family: monospace;">
+			<strong>Keywords:</strong> Design For Test, Verilog, VHDL, BIST, ATPG, Scan, JTAG, MBIST, ECO, OCC, SoC, TCL		</div>
 
 				<div class="theme-row">
 			<div class="section-name">EMPLOYMENT</div>
 			<div class="section-content">
+
+                          <div class="section-items">
+                            <div class="item-title">
+                              <div>
+				June 2017 - Now <br>
+                                Leading DFT Engineer<br>
+                                Sondrel (England)<br>
+                                <img src="./sondrel.jpg" style="width: 100px;margin-top: 5px;">
+                              </div>
+                            </div>
+			    <div class="item-content"><div>
+                                Following the acquisition of our team by Sondrel, I took more responsibilities by becoming lead of the ongoing DFT activities.<br>
+                                <br>
+                                Technical lead of a +400 mm<sup>2</sup> SoC in 16nm :<br>
+                                <ul>
+                                  <li><b>Leading 3 DFT engineer</b>, involving planning the remaining work, assigning tasks, managing priorities, reporting progress to the programme manager and to the project manager.</li>
+                                  <li><b>Architecting</b> the DFT for the SoC. The major challenge here for me was architecting the scan due to the size of the project. The scan strategy is based around <b>scan isolation wrapper</b> to allow testing of different parts of the SoC independently while maintaining hight coverage and hight pattern efficiency. Another important architecting decision was to base memory bist and AMS testing on <b>IEEE1687 IJTAG</b>, to allow hierarchical insertion, and easy pattern re-targeting thanks to <b>Tessent Shell</b> from Mentor Graphics. </li>
+                                  <li>Leading flow developments to facilitate the DFT work on the project. By working on the <b>scan insertion</b> flow, I learnt about the complex scan insertion techniques available with Synopsys <b>DFTMAX</b>, like the hybride flow and the core wrapping techniques. </li>
+                                  <li><b>Documenting</b> the DFT architecture and specifying its implementation. With the help of my team of DFT engineers, we are writing and maintaining general documents for the overall SoC, but also specific documents tailored to specificity of each subsystem.</li>
+                                </ul><br>
+                                <b>ATE bring-up</b> of a 4M DFF in 28nm SoC (ES and respin) :<br>
+                                <ul>
+                                  <li>AMS tests development, and support the test house to bring them up. IP involved : HDMI, MIPI, ADC, DAC, DDR4 controller, efuse, USB3, boundary scan</li>
+                                  <li>Memory bist bring-up. This involved re-generating some of the test patterns with a different clock tree setup due to some clocks running too fast.</li>
+                                  <li>ATPG and scan bring-up. A few issues encountered during scan bring-up. One of them was related to the scan clock timeplate. Another issue was related to a bug on some of the pads (fixed for the respin). </li>
+                                </ul><br>
+                                I inherited a web based tool used by the backend team to monitor synthesis and layout jobs, providing a quick way to access metrics on how a given job is progressing. The tool is based on PHP/MySQL, with a TCL server to feed data into the database (the physical design flow sends the relevant information to this server). I have since improved this tool to also capture scan insertion metrics, allowing easy access to scan insertion metrics to anyone but also helping me to collect and track scan insertion quality across the SoC. A second improvement I made to the tool was to introduce tracking of the memory bist releases that are made (internal release process of a memory bist inserted design) for a given SoC and the ability to search for the physical design jobs using a given memory bist release.
+	                    </div></div>
+                          </div>
+
+
+                          
 				                <div class="section-items">
 					<div class="item-title"><div>
-						Aug. 2015 - Now <br>
+						Aug. 2015 - May 2017<br>
 DFT Hardware Design Engineer<br>
 Imagination Technologies (England)<br>
 <img src="./imgtec.gif" style="width: 100px;margin-top: 5px;">					</div></div>
@@ -179,13 +211,13 @@ During this activity I suggested to my team to develop a software to automate th
 						Synopsys :
   <ul>
     <li>TetraMAX (++++)</li>
-    <li>VCS (++)</li>
-    <li>DC (+)</li>
-    <li>Formality (+)</li>
+    <li>DFTMAX (+++)</li>
+    <li>Formality (++)</li>
+    <li>VCS (+)</li>
     </ul>
 Cadence NCSim (++++), <br>
 Mentor Tessent Shell (++++), <br>
-GIT(++++), Perforce(+++)					</div></div>
+GIT(++++), Perforce(+++++)					</div></div>
 				</div>
 				                <div class="section-items">
 					<div class="item-title"><div>
@@ -238,7 +270,7 @@ GIT(++++), Perforce(+++)					</div></div>
 				<a href="mailto:jordan@penard.fr">jordan@penard.fr</a>			</div></div>
 			<div id="contact-mail" class="contact-details"><div>
 				<strong>MAIL</strong><br>
-				45 Copsewood Road, Watford, WD24 5DY, UK			</div></div>
+				Flat 5, 26 Langley Road, WD17 4PT, Watford, UK			</div></div>
 		</div>
 		
 	
