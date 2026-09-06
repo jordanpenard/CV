@@ -1,0 +1,13 @@
+services:
+  web_cv_jordan:
+    image: ubuntu/apache2:2.4-26.04_edge
+    container_name: web_cv_jordan
+    environment:
+      - TZ=Europe/London
+    volumes:
+      - ./html:/var/www/html:ro
+      - ./allow-htaccess.conf:/etc/apache2/conf-enabled/allow-htaccess.conf
+      - ./headers.load:/etc/apache2/mods-enabled/headers.load
+    ports:
+      - 8081:80
+    restart: always

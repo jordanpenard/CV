@@ -1,0 +1,8 @@
+# Enable Apache mod_headers inside the ubuntu/apache2 (rock) container.
+#
+# The chiseled rock image ships /usr/lib/apache2/modules/mod_headers.so but does
+# NOT enable it by default (no a2enmod/apache2ctl inside the image). This file
+# is mounted into /etc/apache2/mods-enabled/headers.load and provides the exact
+# LoadModule line that `a2enmod headers` would create, so the Cache-Control
+# rules in html/.htaccess actually take effect.
+LoadModule headers_module /usr/lib/apache2/modules/mod_headers.so
