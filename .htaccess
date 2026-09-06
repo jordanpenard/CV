@@ -1,0 +1,12 @@
+# Cache-Control for jordan.penard.fr (Apache)
+#
+# Everything is served with "no-cache, must-revalidate" for safety:
+# - The browser may store the response, but MUST revalidate against the server
+#   (If-Modified-Since / ETag) before every use.
+# - So after any deploy, visitors can never be shown a stale page or asset.
+# - (The ?v=N query strings on asset URLs in index.htm are kept too: they force
+#   any *already-cached* old entries to be re-fetched as brand-new URLs.)
+
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, must-revalidate"
+</IfModule>

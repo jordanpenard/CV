@@ -49,3 +49,28 @@ ul {
 	margin: 0px;
 }
 
+/* Skill rating stars (Font Awesome) */
+.stars {
+	position: relative;
+	display: inline-block;
+	font-family: "Font Awesome 6 Free";
+	font-size: 11px;
+	line-height: 1;
+	vertical-align: middle;
+	color: #c9c9d4;	/* empty stars */
+}
+.stars::before {
+	content: "\f005\f005\f005\f005\f005";
+}
+.stars::after {
+	content: "\f005\f005\f005\f005\f005";
+	font-weight: 900;
+	color: #910691;	/* filled stars - brand purple */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--stars);
+	overflow: hidden;
+	white-space: nowrap;
+}
+
