@@ -43,33 +43,53 @@
 				</div>
 				<div class="item-content">
 					<div>
-						Staff Design Engineer at Blaize, an AI accelerator company. I joined the SoC design team as DFT lead for the company's SoC and IP designs, and my role grew to span SoC design, debug infrastructure, and in-house tooling across the full silicon lifecycle.<br>
+						Senior hardware design engineer with 13+ years of experience in semiconductor development, specialising in DFT
+						architecture and implementation at IP and SoC level. Extensive experience spanning scan architecture, MBIST, ATPG, IJTAG and
+						DFT methodology, complemented by broad expertise in RTL design, synthesis, FPGA, SoC integration and engineering automation.<br>
+						Proven track record of independently owning complex engineering activities, establishing DFT methodologies and coordinating
+						technical implementation across multidisciplinary teams and external design partners.<br>
 						<br>
-						<b>DFT &amp; Implementation</b><br>
+						<b>DFT Architecture &amp; Implementation</b><br>
 						<ul>
-							<li><b>DFT lead</b> for SoC designs and Blaize IP designs, owning scan, MBIST and ATPG from architecture to sign-off. Taped out a 6M flops, 75 mm<sup>2</sup> design, and currently developing a ~70M flops SoC.</li>
-							<li><b>Synthesis trials</b> for various designs across the SoC: SoC blocks, video IP, parts of the NoC, and debug probes.</li>
-							<li>DFT and synthesis <b>TCL flow development</b> on Siemens Tessent Shell and Cadence Genus respectively.</li>
+							<li><b>Technical owner for DFT</b> across SoC and IP designs, covering scan, MBIST and ATPG from specification and
+								architecture through implementation and sign-off.</li>
+							<li>Defined <b>SoC-level DFT requirements</b> and coordinated implementation with external design partners, ensuring robust
+								and efficient test solutions.</li>
+							<li>Delivered DFT architecture for a 6M-flop, 75 mm<sup>2</sup> SoC tapeout, and currently contributing
+								to the development of a next-generation ~70M-flop, ~200 mm<sup>2</sup> SoC.</li>
+							<li>Identified and resolved <b>test coverage deficiencies</b> in Blaize's AI core IP, driving corrective solutions to
+								improve testability</li>
+							<li>Developed and maintained <b>DFT implementation flow</b> using Siemens Tessent Shell</li>
 						</ul>
-						<b>SoC Design &amp; Debug</b><br>
+						<b>SoC Design &amp; Microarchitecture</b><br>
 						<ul>
-							<li><b>SoC debug infrastructure</b> development using Siemens Embedded Analytics (formerly UltraSoC).</li>
-							<li><b>SoC NoC design</b> using Arteris FlexNoC5. Fully hierarchical and asynchronously partitioned NoC to ease top-level, partition and subsystem physical design tasks.</li>
-							<li>Authored <b>specifications and RTL</b> for multiple SoC blocks: programmable address-hashing function, MSI generator, programmable address extension, and PVT controller.</li>
-							<li><b>FPGA designs</b> to support bootrom development and video IP validation using Xilinx Vivado, leveraging the built-in PCIe and DDR IPs of the FPGA.</li>
+							<li>Contributed to SoC development beyond DFT, including synthesis, FPGA, NoC interconnect and debug infrastructure.</li>
+							<li>Designed and implemented <b>hierarchical NoC architecture</b> using Arteris FlexNoC5, with asynchronous partitioning
+								to facilitate subsystem integration and physical implementation.</li>
+							<li>Authored <b>specifications and RTL</b> for multiple SoC IPs: programmable address-hashing, MSI generator, 
+								programmable address extension, PVT controller, and On-Chip routing.</li>
+							<li>Developed <b>RTL generation scripts</b> to automate the integration and configuration of Siemens Embedded Analytics
+								(formerly UltraSoC) debug components, generating reusable debug wrapper logic for SoC subsystem integration.</li>
+							<li>Developed an <b>FPGA prototyping platform</b> to support bootrom development and video IP validation on Xilinx Ultrascale, 
+								leveraging the built-in PCIe and DDR IPs of the FPGA.</li>
 						</ul>
-						<b>Automation &amp; Tooling</b><br>
+						<b>Engineering Automation &amp; Infrastructure</b><br>
 						<ul>
-							<li>Python scripts and infrastructure supporting video tiling/detiling IP verification, SoC and subsystem stitching, and pad wrapper generation.</li>
-							<li>RAM macro partitioning and wrapper generation tool in Python.</li>
-							<li>In-house physical design flow monitoring tool: a web-based dashboard (PHP/MySQL) tracking synthesis and layout job progress. Allows full traceability of Synthesis and PnR jobs for QOR results, design size, logs and reports, and traces provenance of RTL and flow scripts back to the git commit they came from.</li>
-							<li>Internal distributed video streaming platform to support SW validation efforts, with a Django-based web interface.</li>
-							<li>Sphinx documentation infrastructure and template used across the hardware team.</li>
+							<li>Developed the <b>Cadence Genus synthesis flow</b> for Blaize.</li>
+							<li>Developed <b>Python tools</b> for video IP verification, RAM macro partitioning, SoC and subsystem stitching, 
+								pad wrapper generation, and documentation generation.</li>
+							<li>Developed internal <b>physical design monitoring infrastructure</b>, providing traceability of synthesis and 
+								place-and-route results, QoR metrics and source-code provenance.</li>
+							<li>Drove the adoption of <b>structured code review and CI practices</b> within the SoC hardware design team,
+								introducing mandatory merge request reviews and automated checks (RTL linting) through GitLab CI to improve design
+								quality and consistency.</li>
 						</ul>
-						<b>Process &amp; Infrastructure</b><br>
+						<b>Technical Leadership &amp; Cross-functional Collaboration</b><br>
 						<ul>
-							<li>Championed the transition to GitLab to establish rigorous code review workflows for the SoC hardware design team, improving design quality across RTL, scripting, and verification.</li>
-							<li>Set up and maintained the build servers that run the jobs dispatched by one of our software teams' CI/CD pipelines.</li>
+							<li>Acted as a <b>technical reference across multiple engineering disciplines</b>, independently taking ownership of
+								unfamiliar technical areas and delivering with minimal supervision.</li>
+							<li>Collaborated with SoC, physical design, IP, and external partner teams, contributing to technical discussions and
+								project-level decisions.</li>
 						</ul>
 						<br>
 					</div>
@@ -370,7 +390,6 @@
 				<div class="item-content">
 					<div>
 						Verilog/SystemVerilog <span class="stars" title="4/5" style="--stars:80%"></span></br>
-						VHDL <span class="stars" title="2/5" style="--stars:40%"></span>
 					</div>
 				</div>
 			</div>
@@ -381,11 +400,11 @@
 				</div>
 				<div class="item-content">
 					<div>
+						Python3 <span class="stars" title="4/5" style="--stars:80%"></span>
 						C <span class="stars" title="4/5" style="--stars:80%"></span></br>
 						TCL <span class="stars" title="4/5" style="--stars:80%"></span></br>
 						PHP <span class="stars" title="3/5" style="--stars:60%"></span></br>
 						MySQL <span class="stars" title="3/5" style="--stars:60%"></span></br>
-						Python3 <span class="stars" title="3/5" style="--stars:60%"></span>
 					</div>
 				</div>
 			</div>
